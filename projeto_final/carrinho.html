@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>Carrinho</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <style>
+            #logo {
+                text-align: center;
+                background-color: black;
+            }
+        </style>
+    </head>
+
+    <body style="min-width:372px;">
+        <div id="logo">
+            <img src="fotos_projeto/magic_books.2.png" width="150">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom shadow-sm mb-3 ">
+            <div class="container">
+                <a class="navbar-brand text-warning" href="site_livraria.html"><strong>Magic Books</strong></a>
+                <button class="navbar-toggler " type="'button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <div class="col-12 align-self-center">
+                                <form class=" justify-content-center justify-content-md-start mb-4 mb-md-0">
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="Digite aqui oque procura">
+                                        <button class="btn btn-warning">
+                                            Buscar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-warning">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                    </svg>
+                                    Favoritos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cadastramento.html" class="nav-link text-warning">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    Cadastrar-se</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="carrinho.html" class="nav-link text-warning">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                    Carrinho</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <main class="mb-5 pb-5 mb-md-0">
+            <div class="container">
+                <h5>Carrinho de compras</h5>
+                <hr>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class=" col-4 col-md-3 col-lg-2">
+                                <a href="">
+                                    <img src="fotos_projeto/coraline.jpeg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class=" col-8 col-md-9 col-lg-7 col-xl-8 text-left algin-self-center">
+                                <h4><b><a href="" class="text-decoration-none text-dark">Coraline</a></b></h4>
+                                <h4><small>Coraline</small></h4>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sem-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 algin-self-center mt-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="4">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-up" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger border-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="text-right mt-2">
+                                    <small class="text-secondary">Valor unitario: R$ 39,40</small><br>
+                                    <span class="text-dark">Valor total: R$ 157,6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class=" col-4 col-md-3 col-lg-2">
+                                <a href="">
+                                    <img src="fotos_projeto/harry_potter.jpeg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class=" col-8 col-md-9 col-lg-7 col-xl-8 text-left algin-self-center">
+                                <h4><b><a href="" class="text-decoration-none text-dark">Harry Potter</a></b></h4>
+                                <h4><small>Harry Potter e a Pedra Filosofal</small></h4>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sem-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 algin-self-center mt-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="2">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-up" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger border-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="text-right mt-2">
+                                    <small class="text-secondary">Valor unitario: R$ 47,60</small><br>
+                                    <span class="text-dark">Valor total: R$ 95,20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class=" col-4 col-md-3 col-lg-2">
+                                <a href="">
+                                    <img src="fotos_projeto/como_eu_era_antes_de_voce.jpeg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class=" col-8 col-md-9 col-lg-7 col-xl-8 text-left algin-self-center">
+                                <h4><b><a href="" class="text-decoration-none text-dark">Como eu era antes de você</a></b>
+                                </h4>
+                                <h4><small>Como eu era antes de você</small></h4>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sem-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 algin-self-center mt-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="3">
+                                    <button type="button" class="btn btn-outline-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-caret-up" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger border-dark bnt-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="text-right mt-2">
+                                    <small class="text-secondary">Valor unitario: R$35,90</small><br>
+                                    <span class="text-dark">Valor total: R$ 107,70</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3 text-right">
+                        <div class="text-right">
+                            <h5 class="text-dark mb-3">Valor total: R$ 360,50</h5>
+                            <a href="site_livraria.html" class="btn btn-outline-success btn-lg">Continuar comprando</a>
+                            <button class="btn btn-danger btn-lg">Fechar compra</button>
+                        </div>
+                    </li>
+                </ul>
+        </main>
+
+
+        <footer class="border-top fixed-bottom text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        &copy;2023 - Magic Books
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="text-decoration-none text-dark">Política de Privacidade</a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right">
+                        <a href="#" class="text-decoration-none text-dark">Karolayne Raquel</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
